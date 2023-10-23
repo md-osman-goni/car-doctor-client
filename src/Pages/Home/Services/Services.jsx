@@ -6,11 +6,11 @@ const Services = () => {
 
     const [services, setServices] = useState([]);
 
-    useEffect(()=>{
+    useEffect(() => {
         fetch('services.json')
-        .then(res => res.json())
-        .then(data => setServices(data));
-    },[])
+            .then(res => res.json())
+            .then(data => setServices(data));
+    }, [])
 
 
     return (
@@ -24,6 +24,9 @@ const Services = () => {
                 {
                     services.map(service => <ServiceCard key={service._id} service={service}></ServiceCard>)
                 }
+            </div>
+            <div className="text-center my-10">
+                <button className="btn btn-outline border-[#FF3811] hover:bg-[#FF3811] text-[#FF3811] font-semibold capitalize text-xl hover:border-none">More Services</button>
             </div>
         </div>
     );
