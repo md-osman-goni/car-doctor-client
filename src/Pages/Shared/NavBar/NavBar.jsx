@@ -37,7 +37,7 @@ const NavBar = () => {
             <div className="navbar-end">
                 <button className="btn btn-ghost"><FaShoppingBag className="text-xl"></FaShoppingBag></button>
                 <button className="btn btn-ghost mr-2"><FaSearch className="text-xl "></FaSearch></button>
-                <button className="btn btn-outline btn-warning">Appointment</button>
+                <button className="btn btn-outline border-[#FF3811] hover:bg-[#FF3811] text-[#FF3811]">Appointment</button>
             </div>
         </div>
     );
